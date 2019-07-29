@@ -3,14 +3,20 @@ a{
   text-decoration: none;
 } 
 
-.flash-box{
+.notification{
+  .notice{
+    background-color: $blue_color;
     color: $white_color;
     font-size: 1rem;
     font-weight: lighter;
     text-align: center;
-    .notice{
-      background-color: $blue_color;
-    }
+  }
+  .alert{
+    background-color: $alert_orange;
+    color: $white_color;
+    text-align: center;
+  }
+
 }
 
 .chat-side{
