@@ -1,0 +1,23 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group  left
+      %ul.main-header__left-box__member-list
+        eee
+        %li.main-header__left-box__member-list__member 
+          lll
+    = link_to  do
+      .main-header__edit-btn edit
+  .messages
+    .message__upper-info
+      %p.message__upper-info__talker talk
+      %p.message__upper-info__date date
+    %p.message__text text
+  .form
+    %form.new_message(type="hidden")
+      .input-box
+        %input(type="text" class="input-box__text")
+        %label.input-box__image(for="message_image")
+          %i.fa.fa-picture-o
+          %input.input-box__image__file(type="file" id="message_image")
+      %input.submit-btn(type="submit")
