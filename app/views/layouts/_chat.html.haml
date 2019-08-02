@@ -13,7 +13,7 @@
   .messages
     = render partial: 'message', collection: @messages
   .form
-    = form_for [@group, @message] do |f|
+    = form_for [@group, @message],html:{id: :new_comment} do |f|
       .input-box
         = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
         = f.label :image, class: 'input-box__image' do
