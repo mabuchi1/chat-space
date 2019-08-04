@@ -3,13 +3,11 @@ $(document).on('turbolinks:load', function() {
   var result = $("#chat-group-users");
   var current_user = current_user
   function appendUser(user){
-    if(user.id != current_user){
     var html = `<div class="chat-group-user clearfix">
     <p class="chat-group-user__name">${user.name}</p>
     <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
   </div>`
   user_list.append(html); 
-  }
   }
 
   function appendErrMsgToHTML(msg) {
