@@ -6,7 +6,7 @@ $(function(){
    var img = ""
   }
     var html = `
-      <div class="message__upper-info">
+      <div class="message__upper-info" data-text_id="${message.id}">
         <div class="message__upper-info__talker">
         ${message.user_name}
         </div>
